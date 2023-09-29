@@ -1,6 +1,8 @@
 <p>product works!</p>
 
-<products-price />
+<products-price *ngIf="isProductVisible" [price]="currentPrice" />
 
 <!-- Este botón hace reaccionar a ngDoCheck, ngAfterContentCheked y ngAfterViewCheked -->
 <button (click)="isProductVisible = !isProductVisible">Toggle</button>
+
+<button (click)="increasePrice()">+1 price</button>

@@ -28,6 +28,7 @@ export class ProductComponent
     OnDestroy
 {
   public isProductVisible: boolean = false;
+  public currentPrice: number = 10;
 
   constructor() {
     // Se llama antes de cualquier ciclo de vida
@@ -41,6 +42,7 @@ export class ProductComponent
 
   ngOnChanges(changes: SimpleChanges): void {
     // Justo despues del constructor
+    console.log(changes);
     console.log('ngOnChanges');
   }
 
@@ -72,5 +74,9 @@ export class ProductComponent
   ngOnDestroy(): void {
     // Se llama justo antes de que el componente o directiva va a ser destruida
     console.log('ngOnDestroy');
+  }
+
+  increasePrice() {
+    this.currentPrice++;
   }
 }
