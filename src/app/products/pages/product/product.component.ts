@@ -27,6 +27,8 @@ export class ProductComponent
     AfterViewChecked,
     OnDestroy
 {
+  public isProductVisible: boolean = false;
+
   constructor() {
     // Se llama antes de cualquier ciclo de vida
     console.log('constructor');
