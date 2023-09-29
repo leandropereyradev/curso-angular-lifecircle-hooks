@@ -29,45 +29,46 @@ export class ProductComponent
 {
   constructor() {
     // Se llama antes de cualquier ciclo de vida
+    console.log('constructor');
   }
 
   ngOnInit(): void {
     // Antes del cambio de una propiedad
-    throw new Error('Method not implemented.');
+    console.log('ngOnInit');
   }
 
   ngOnChanges(changes: SimpleChanges): void {
     // Justo despues del constructor
-    throw new Error('Method not implemented.');
+    console.log('ngOnChanges');
   }
 
   ngDoCheck(): void {
     // Se llada cada vez que una propiedad del componente o directiva es revisada
-    throw new Error('Method not implemented.');
+    console.log('ngDoCheck');
   }
 
   ngAfterContentInit(): void {
     // Después de ngOnInit, cuando el componente es inicializado
-    throw new Error('Method not implemented.');
+    console.log('ngAfterContentInit');
   }
 
   ngAfterContentChecked(): void {
     // Se llama despues de cada revisión del componente o directiva
-    throw new Error('Method not implemented.');
+    console.log('ngAfterContentChecked');
   }
 
   ngAfterViewInit(): void {
     // Despues del ngAfterContentInit
-    throw new Error('Method not implemented.');
+    console.log('ngAfterViewInit');
   }
 
   ngAfterViewChecked(): void {
     // Llamado después de casa revisión de las vistas del componente o directiva
-    throw new Error('Method not implemented.');
+    console.log('ngAfterViewChecked');
   }
 
   ngOnDestroy(): void {
     // Se llama justo antes de que el componente o directiva va a ser destruida
-    throw new Error('Method not implemented.');
+    console.log('ngOnDestroy');
   }
 }
